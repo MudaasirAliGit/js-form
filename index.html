@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <fieldset>
+    <!-- Registration form with the following input fields: -->
+    <legend>Registration Form: </legend>
+    <!-- Name -->
+    <label for="name">Name: <br></label>
+    <input id="name" type="text" placeholder="Enter your name" required 
+    onmouseover="this.style.backgroundColor='salmon',this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+    <p id="nameError"></p>
+    <!-- Email -->
+    <label for="email"><br>E-mail: <br></label>
+    <input id="email" type="email" placeholder="Enter your email" required 
+    onmouseover="this.style.backgroundColor='salmon',this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+    <p id="emailError"></p>
+    <!-- Phone Number -->
+    <label for="number"><br>Number: <br></label>
+    <input id="pnumber" type="number" placeholder="Enter your phone number" required 
+    onmouseover="this.style.backgroundColor='salmon',this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+    <p id="pnumberError"></p>
+    <!-- Date of Birth -->
+    <label for="date"><br>Date of birth: <br></label>
+    <input id="date" type="date" required onmouseover="this.style.backgroundColor='salmon',
+    this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+    <p id="dateError"></p>
+    <!-- Gender -->
+    <label for="gender"><br>Gender: <br></label>
+    <select id="gender" name="gender" required onmouseover="this.style.backgroundColor='salmon'
+    ,this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <p id="genderError"></p>
+    <!-- Age -->
+    <label for="age"><br>Age: <br></label>
+    <input id="age" type="number" placeholder="Enter your age" required 
+    onmouseover="this.style.backgroundColor='salmon',this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+    <p id="ageError"></p>
+    <!-- Password -->
+    <label for="password"><br>Password: <br></label>
+    <div class="password-container">
+        <input id="password" type="password" placeholder="Enter your password" required 
+        onmouseover="this.style.backgroundColor='salmon',this.style.transitionDuration='1s'" 
+        onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+        Show<input type="checkbox" name="show" id="show" onclick="show()">
+    </div>
+    <p id="passwordError"></p>
+    <!-- Confirm Password -->
+    <label for="confirm"><br>Confirm Password: <br></label>
+    <input id="confirm-password" type="password" placeholder="Confirm your password" required 
+    onmouseover="this.style.backgroundColor='salmon',this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+    <p id="confirmpasswordError"></p>
+    <!-- Address -->
+    <label for="address"><br>Address: <br></label>
+    <input id="address" type="text" placeholder="Enter your address" required 
+    onmouseover="this.style.backgroundColor='salmon',this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+    <p id="addressError"></p>
+    <!-- City -->
+    <label for="city"><br>City name: <br></label>
+    <input id="city-name" type="text" placeholder="Enter your city" required 
+    onmouseover="this.style.backgroundColor='salmon',this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+    <br><br>
+    <!-- Submit -->
+    <input id="submit" type="submit" value="Submit" onclick="getInputValue()" 
+    onmouseover="this.style.backgroundColor='salmon',this.style.transitionDuration='1s'" 
+    onmouseleave="this.style.backgroundColor='rgb(255, 213, 219)'">
+    </fieldset>
+    
+    <!-- Javascript link -->
+    <script src="script.js"></script>
+</body>
+</html>
